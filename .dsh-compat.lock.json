@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "resetBudget": "N",
+  "verified": {
+    "snapshot_key": "01f0e630c5b6db75610f17be84b7dce056a42b48006971e69871d00779242838",
+    "source_commit": "3a9872910a7537e7b7f6877ef836b3a986d33d24",
+    "source_tree_digest": "f042213ec77ea557bab156066e1d5d9780540b48d2d091c8828899ac61542b3b",
+    "dsh": {
+      "package": "@deepseek-ai/dsh",
+      "version": "0.1.1-rc.2",
+      "integrity": "sha512-UP1UIh6q3Gme/yXRn/QL2P8IsVlv8Shpg22TRJIZPsCRWLm4CBiA1MUvXmJAfsOEETBMLAl+xWPtFw6ICsN3wg==",
+      "graph_digest": "df7a474e07c6120e1533679816a260ea4b998549118c1a21cc47ba015a8af6da"
+    },
+    "plugin": {
+      "package": "dsh-whale-report",
+      "version": "0.4.0",
+      "tarball_sha256": "977b824dfcd5b14cab81fb90d71ab40367e13c041472cb15a3313b9045eee64b",
+      "contract_sha256": "36803f2ba803c26a01213a864c98074391bd3ef8b26582765dfe9b5ae7199d6b"
+    },
+    "runtime": {
+      "node": {
+        "exactVersion": "24.19.0",
+        "effectiveRange": "^22.19.0 || >=24.0.0",
+        "source": "package.json#engines.node",
+        "declarations": {
+          "package.json#engines.node": "^22.19.0 || >=24.0.0"
+        }
+      },
+      "packageManager": {
+        "name": "pnpm",
+        "exactVersion": "10.33.2",
+        "source": "pnpm-lock.yaml",
+        "lockfiles": [
+          "pnpm-lock.yaml"
+        ]
+      },
+      "runner": {
+        "configuredLabel": "ubuntu-24.04",
+        "actualLabel": "GitHub Actions 1000000948",
+        "os": "Linux",
+        "arch": "x64",
+        "githubActions": true
+      }
+    },
+    "verified_at": "2026-08-22T11:30:17.581Z",
+    "report_url": "https://github.com/LCYLYM/dsh-whale-report/actions/runs/32570423087"
+  },
+  "campaigns": {}
+}
