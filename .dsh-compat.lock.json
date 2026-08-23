@@ -45,5 +45,50 @@
     "verified_at": "2026-08-23T08:44:57.184Z",
     "report_url": "https://github.com/LCYLYM/dsh-whale-report/actions/runs/32629061312"
   },
-  "campaigns": {}
+  "campaigns": {
+    "0.1.1-rc.2": {
+      "epoch": 1,
+      "history": [],
+      "lifetime_active_ms": 0,
+      "lifetime_attempts": 0,
+      "status": "BLOCKED",
+      "automatic_repair_used": true,
+      "attempts_used": 1,
+      "base_commit": "aeb72270afbd4b3713da91ae27de27d4e565ba0f",
+      "repair_dsh_version": "0.1.1-rc.1",
+      "provider": "deepseek-official",
+      "model": "deepseek-v4-flash-vision-exp",
+      "route_fingerprint": "faaa71af208fbbaf61375c561faef30958eceba731b9fccdcceca6275619706e",
+      "input_fingerprint": "e40ac507b5fe43ddd2fded668002c1bf576eade19ef8b63fa75c085b443793f9",
+      "usage": {
+        "inputTokens": 28631,
+        "outputTokens": 8595,
+        "cacheReadTokens": 596352,
+        "cacheWriteTokens": 0,
+        "reasoningTokens": 4558,
+        "totalTokens": 633578,
+        "sessionFiles": 1
+      },
+      "estimated_cny": {
+        "amount": 0.222883,
+        "band": "peak",
+        "revision": "deepseek-public-2026-08-21",
+        "known": true
+      },
+      "active_ms": 105688,
+      "converge_message_sent": false,
+      "converge_message_due": false,
+      "limits": {
+        "max_tokens": 600000,
+        "max_cny": 3,
+        "max_wall_minutes": 60,
+        "max_attempts": 2
+      },
+      "blocker": {
+        "code": "BUDGET_EXHAUSTED",
+        "message": "本版本维修预算已用完，需要 resetBudget 或增加额度后才能继续。"
+      },
+      "finished_at": "2026-08-23T09:09:40.762Z"
+    }
+  }
 }
