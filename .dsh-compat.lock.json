@@ -127,6 +127,50 @@
         "totalTokens": 633578,
         "sessionFiles": 1
       }
+    },
+    "0.1.2-rc.1": {
+      "epoch": 1,
+      "history": [],
+      "lifetime_active_ms": 0,
+      "lifetime_attempts": 0,
+      "status": "BLOCKED",
+      "automatic_repair_used": true,
+      "attempts_used": 2,
+      "base_commit": "50ada3e62483ac8b7c1b99f5d0f43c83a7947234",
+      "repair_dsh_version": "0.1.1-rc.2",
+      "provider": "deepseek-official",
+      "model": "grok-4.6",
+      "route_fingerprint": "7f4fa6d6f3bdb11cd21af3a943bd4af8273e85e2371ac98460f6217188d367ae",
+      "input_fingerprint": "13dfcb4332bd6bea29a5acd7c554d3a01e93702150530ca0bb214fb7f1a4dc01",
+      "usage": {
+        "inputTokens": 308936,
+        "outputTokens": 29387,
+        "cacheReadTokens": 859008,
+        "cacheWriteTokens": 0,
+        "reasoningTokens": 24901,
+        "totalTokens": 1197331,
+        "sessionFiles": 2
+      },
+      "estimated_cny": {
+        "amount": null,
+        "band": "low_price",
+        "revision": "deepseek-public-2026-08-21",
+        "known": false
+      },
+      "active_ms": 604173,
+      "converge_message_sent": false,
+      "converge_message_due": true,
+      "limits": {
+        "max_tokens": 4000000,
+        "max_cny": 3,
+        "max_wall_minutes": 60,
+        "max_attempts": 2
+      },
+      "blocker": {
+        "code": "REPAIR_NOT_VERIFIED",
+        "message": "independent verifier returned BLOCKED after 2 attempts"
+      },
+      "finished_at": "2026-09-04T05:12:10.337Z"
     }
   }
 }
