@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "resetBudget": "N",
+  "resetBudget": "Y",
   "verified": {
     "snapshot_key": "8ca8ce1e2c530f550ed3469dad89eadb32e247bff5c8e4fa76bc8f869e10fafe",
     "source_commit": "0413300e06688e2c61878db573e85dad58338fcd",
