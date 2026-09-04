@@ -1,20 +1,28 @@
 {
   "schema": 1,
-  "resetBudget": "Y",
+  "resetBudget": "N",
   "verified": {
-    "snapshot_key": "8ca8ce1e2c530f550ed3469dad89eadb32e247bff5c8e4fa76bc8f869e10fafe",
-    "source_commit": "0413300e06688e2c61878db573e85dad58338fcd",
-    "source_tree_digest": "45bebe56fe1b1b79f83599e8eaf2cca3599d9ee54bbd3cbfe26626dcf9d57f02",
+    "snapshot_key": "0cc118a41d5eb590127114b7159909468d65cae69bf67217e455d3309a5698b4",
+    "source_commit": "ae46093e612d7431b9f0feb51945e7752b2719d2",
+    "source_tree_digest": "9cdf46c3b29b90ef9f46d71d9d445c2620825fe6611fe0593401b2d4c87ac9ef",
     "dsh": {
       "package": "@deepseek-ai/dsh",
-      "version": "0.1.1-rc.2",
-      "integrity": "sha512-UP1UIh6q3Gme/yXRn/QL2P8IsVlv8Shpg22TRJIZPsCRWLm4CBiA1MUvXmJAfsOEETBMLAl+xWPtFw6ICsN3wg==",
-      "graph_digest": "f585d69f7d868ef19178277d2d2fc1b50649d71709ae2f1c3b63da515482ccaa"
+      "version": "0.1.2-rc.1",
+      "integrity": "sha512-RPq48TzxvwpdT9/7W1tbhZDBMmeK+bxDrX9cqQC27Wx/LqtgJF8PSa3b3xriU8oxtvhwYmk21w2cej3uMQrnVA==",
+      "graph_digest": "99ad12269dac9fb3bee0452b16aa5727e79efdb1eacd6c63a3bce3aeb384c523",
+      "release": {
+        "tag": "dsh-v0.1.2-rc.1",
+        "version": "0.1.2-rc.1",
+        "commit": "a66e4702047846cdaa10c66c9d3df3951f5ea70d",
+        "url": "https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.1.2-rc.1",
+        "publishedAt": "2026-09-03T06:06:07Z",
+        "prerelease": true
+      }
     },
     "plugin": {
       "package": "dsh-whale-report",
       "version": "0.4.0",
-      "tarball_sha256": "3c4ab0e97ec63efbf284c3a89220f9d116d21ba11b21968cc7c68a405a174e52",
+      "tarball_sha256": "1b30957288f2331d8a750445d8edf15ea574e467fbb96895fa65af0def9c529c",
       "contract_sha256": "774b2fe21bc499ee1e731716417ce1485c932c1e35c0da550918c605998d2f72"
     },
     "runtime": {
@@ -36,14 +44,14 @@
       },
       "runner": {
         "configuredLabel": "ubuntu-24.04",
-        "actualLabel": "GitHub Actions 1000001103",
+        "actualLabel": "GitHub Actions 1000001677",
         "os": "Linux",
         "arch": "x64",
         "githubActions": true
       }
     },
-    "verified_at": "2026-08-23T09:23:13.042Z",
-    "report_url": "https://github.com/LCYLYM/dsh-whale-report/actions/runs/32630631684"
+    "verified_at": "2026-09-04T08:08:21.340Z",
+    "report_url": "https://github.com/LCYLYM/dsh-whale-report/actions/runs/33850598566"
   },
   "campaigns": {
     "0.1.1-rc.2": {
@@ -218,23 +226,23 @@
       ],
       "lifetime_active_ms": 781083,
       "lifetime_attempts": 4,
-      "status": "BLOCKED_EXTERNAL",
-      "automatic_repair_used": false,
-      "attempts_used": 0,
-      "base_commit": "c930cdc956bb6d401cec4f0012db788cdab05088",
+      "status": "PASS",
+      "automatic_repair_used": true,
+      "attempts_used": 1,
+      "base_commit": "ae46093e612d7431b9f0feb51945e7752b2719d2",
       "repair_dsh_version": "0.1.1-rc.2",
       "provider": "deepseek-official",
       "model": "glm-5.3-flash",
       "route_fingerprint": "9850ed862a9cfd836d66a21b9b35b76d25b538fa78f3d85af0e29f3014153aac",
-      "input_fingerprint": "98e8bebaa61818004af759edc4791d043e0fcdc77fac042c3bd87fe7ff5f5dc7",
+      "input_fingerprint": "f0cfc1d16f874a1b8566a785c04061005bfb48c53f11d2236c8f8d75f0f6478b",
       "usage": {
-        "inputTokens": 18015,
-        "outputTokens": 425,
-        "cacheReadTokens": 65088,
+        "inputTokens": 78771,
+        "outputTokens": 1274,
+        "cacheReadTokens": 86080,
         "cacheWriteTokens": 0,
-        "reasoningTokens": 32,
-        "totalTokens": 83528,
-        "sessionFiles": 1
+        "reasoningTokens": 318,
+        "totalTokens": 166125,
+        "sessionFiles": 2
       },
       "estimated_cny": {
         "amount": null,
@@ -242,7 +250,7 @@
         "revision": "deepseek-public-2026-08-21",
         "known": false
       },
-      "active_ms": 31010,
+      "active_ms": 105306,
       "converge_message_sent": false,
       "converge_message_due": false,
       "limits": {
@@ -255,7 +263,7 @@
         "code": "MODEL_RATE_LIMITED",
         "message": "模型服务限流（429），当次最多重试一次；仍失败则冻结定时重跑。"
       },
-      "finished_at": "2026-09-04T07:41:00.308Z",
+      "finished_at": "2026-09-04T08:08:21.898Z",
       "lifetime_usage": {
         "inputTokens": 343015,
         "outputTokens": 30306,
