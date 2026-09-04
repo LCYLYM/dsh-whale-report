@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "resetBudget": "Y",
+  "resetBudget": "N",
   "verified": {
     "snapshot_key": "8ca8ce1e2c530f550ed3469dad89eadb32e247bff5c8e4fa76bc8f869e10fafe",
     "source_commit": "0413300e06688e2c61878db573e85dad58338fcd",
@@ -129,7 +129,7 @@
       }
     },
     "0.1.2-rc.1": {
-      "epoch": 3,
+      "epoch": 4,
       "history": [
         {
           "epoch": 1,
@@ -186,26 +186,54 @@
             "max_attempts": 2
           },
           "finished_at": "2026-09-04T06:41:41.699Z"
+        },
+        {
+          "epoch": 3,
+          "status": "BLOCKED",
+          "usage": {
+            "inputTokens": 34079,
+            "outputTokens": 919,
+            "cacheReadTokens": 46784,
+            "cacheWriteTokens": 0,
+            "reasoningTokens": 292,
+            "totalTokens": 81782,
+            "sessionFiles": 1
+          },
+          "estimated_cny": {
+            "amount": null,
+            "band": "peak",
+            "revision": "deepseek-public-2026-08-21",
+            "known": false
+          },
+          "active_ms": 174106,
+          "attempts_used": 1,
+          "limits": {
+            "max_tokens": 4000000,
+            "max_cny": 3,
+            "max_wall_minutes": 60,
+            "max_attempts": 2
+          },
+          "finished_at": "2026-09-04T07:07:37.738Z"
         }
       ],
-      "lifetime_active_ms": 606977,
-      "lifetime_attempts": 3,
-      "status": "BLOCKED",
-      "automatic_repair_used": true,
-      "attempts_used": 1,
-      "base_commit": "831e2a88b77c76727b42e25cd725478e2e66ab3a",
+      "lifetime_active_ms": 781083,
+      "lifetime_attempts": 4,
+      "status": "BLOCKED_EXTERNAL",
+      "automatic_repair_used": false,
+      "attempts_used": 0,
+      "base_commit": "c930cdc956bb6d401cec4f0012db788cdab05088",
       "repair_dsh_version": "0.1.1-rc.2",
       "provider": "deepseek-official",
       "model": "glm-5.3-flash",
       "route_fingerprint": "9850ed862a9cfd836d66a21b9b35b76d25b538fa78f3d85af0e29f3014153aac",
-      "input_fingerprint": "453078e71930293da7966d0a8344e6728dd0e09e7ecbdeef604f8cf7b75162c5",
+      "input_fingerprint": "98e8bebaa61818004af759edc4791d043e0fcdc77fac042c3bd87fe7ff5f5dc7",
       "usage": {
-        "inputTokens": 34079,
-        "outputTokens": 919,
-        "cacheReadTokens": 46784,
+        "inputTokens": 18015,
+        "outputTokens": 425,
+        "cacheReadTokens": 65088,
         "cacheWriteTokens": 0,
-        "reasoningTokens": 292,
-        "totalTokens": 81782,
+        "reasoningTokens": 32,
+        "totalTokens": 83528,
         "sessionFiles": 1
       },
       "estimated_cny": {
@@ -214,7 +242,7 @@
         "revision": "deepseek-public-2026-08-21",
         "known": false
       },
-      "active_ms": 174106,
+      "active_ms": 31010,
       "converge_message_sent": false,
       "converge_message_due": false,
       "limits": {
@@ -224,18 +252,18 @@
         "max_attempts": 2
       },
       "blocker": {
-        "code": "WEB_AUTH_TIMEOUT",
-        "message": "独立 verifier 因 WEB_AUTH_TIMEOUT 停止；这不是新的插件兼容失败，因此不会再次调用维修模型。"
+        "code": "MODEL_RATE_LIMITED",
+        "message": "模型服务限流（429），当次最多重试一次；仍失败则冻结定时重跑。"
       },
-      "finished_at": "2026-09-04T07:07:37.738Z",
+      "finished_at": "2026-09-04T07:41:00.308Z",
       "lifetime_usage": {
-        "inputTokens": 308936,
-        "outputTokens": 29387,
-        "cacheReadTokens": 859008,
+        "inputTokens": 343015,
+        "outputTokens": 30306,
+        "cacheReadTokens": 905792,
         "cacheWriteTokens": 0,
-        "reasoningTokens": 24901,
-        "totalTokens": 1197331,
-        "sessionFiles": 3
+        "reasoningTokens": 25193,
+        "totalTokens": 1279113,
+        "sessionFiles": 4
       }
     }
   }
