@@ -2,9 +2,9 @@
   "schema": 1,
   "resetBudget": "N",
   "verified": {
-    "snapshot_key": "1c14842f0c38c3a3aec1ac2a36d2c5f17af9f0cace902b342b1b6a827c8bedfd",
-    "source_commit": "2e1dff978a89af8dad343af82ea1c4b04432f398",
-    "source_tree_digest": "473b815b99f2a17154cbc14c6345478032cb4271e69de40ee0e4921fabfb7573",
+    "snapshot_key": "3068cb8370d8583ee4f6ea7fdd6469f1f938c2039331b6743f551c07fe3894b6",
+    "source_commit": "842f6c6a195bb21656189b7f4298b7b7c4a40fd3",
+    "source_tree_digest": "3613de36dbc9ecbdba1776fe5682dfa81848bbab2333d6ee47141088d64d0ea1",
     "dsh": {
       "package": "@deepseek-ai/dsh",
       "version": "0.2.1-alpha.2",
@@ -27,7 +27,7 @@
     },
     "runtime": {
       "node": {
-        "exactVersion": "24.13.1",
+        "exactVersion": "24.21.0",
         "effectiveRange": "^22.19.0 || >=24.0.0",
         "source": "package.json#engines.node",
         "declarations": {
@@ -44,14 +44,14 @@
       },
       "runner": {
         "configuredLabel": "ubuntu-24.04",
-        "actualLabel": "local",
-        "os": "darwin",
-        "arch": "arm64",
-        "githubActions": false
+        "actualLabel": "GitHub Actions 1000002382",
+        "os": "Linux",
+        "arch": "x64",
+        "githubActions": true
       }
     },
-    "verified_at": "2026-10-11T18:20:21.716Z",
-    "report_url": null
+    "verified_at": "2026-10-12T01:14:56.243Z",
+    "report_url": "https://github.com/LCYLYM/dsh-whale-report/actions/runs/38191089517"
   },
   "campaigns": {
     "0.1.1-rc.2": {
