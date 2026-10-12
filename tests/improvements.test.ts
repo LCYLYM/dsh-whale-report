@@ -1,4 +1,4 @@
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 import {
   aggregate,
   aggregateBuckets,
@@ -373,9 +373,20 @@ describe("双路径一致性（direct aggregate vs bucket aggregate）", () => {
     expect(bucket.toolFailedSessions).toEqual(direct.toolFailedSessions);
     expect(bucket.correctionSignals).toEqual(direct.correctionSignals);
     // Improve 输出一致
-    const a = computeImprovements({ stats: direct, period: "wk-2026-W33" });
-    const b = computeImprovements({ stats: bucket, period: "wk-2026-W33" });
-    expect(JSON.stringify(b)).toBe(JSON.stringify(a));
+    // Both paths must receive the same input clock. Advancing Date.now exposes
+    // the former millisecond race without removing createdAt from comparison.
+    let clock = 1234567890000;
+    const clockSpy = vi.spyOn(Date, "now").mockImplementation(() => clock++);
+    try {
+      const now = Date.now();
+      const a = computeImprovements({ stats: direct, period: "wk-2026-W33", now });
+      const b = computeImprovements({ stats: bucket, period: "wk-2026-W33", now });
+      expect(JSON.stringify(b)).toBe(JSON.stringify(a));
+      expect(a.every((item) => item.createdAt === now)).toBe(true);
+      expect(clockSpy).toHaveBeenCalledTimes(1);
+    } finally {
+      clockSpy.mockRestore();
+    }
   });
 });
 
