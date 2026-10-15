@@ -62,7 +62,7 @@
       "platform": "web"
     },
     "compat": {
-      "maxHost": "0.2.1-alpha.2"
+      "maxHost": "0.2.1-alpha.4"
     }
   },
   "dshClient": {

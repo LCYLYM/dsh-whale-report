@@ -2,27 +2,27 @@
   "schema": 1,
   "resetBudget": "N",
   "verified": {
-    "snapshot_key": "f9ea44c0e420f817d5c96be841496cf780bfd58c754eeeb5e66c455562f7bdd8",
-    "source_commit": "d1c7c72b2a176c2f03e8557937d63a15fea14a7b",
-    "source_tree_digest": "bf9796954cdc33508ce0e747a838395ad5719f06814ae9f5a5d848f7facb1096",
+    "snapshot_key": "739ae6f2d2e734c0aec0dfbb985b8c177cc4908ceb24ab69787f95133c273fbc",
+    "source_commit": "e484182a80be76c25f7c5b20336ed182c2b952ca",
+    "source_tree_digest": "748f866f4cf08d6dc3679bc43f173bb7c22c17e30a8460dadaff2aef0ecbc41e",
     "dsh": {
       "package": "@deepseek-ai/dsh",
-      "version": "0.2.1-alpha.2",
-      "integrity": "sha512-CkRE0uAOg2ldL2VpfF4cNRsl178CH5nM+8YklPrlMZl5ln0KhVfd42dJuRlgOXZmkpizCRvrVS8LAL+GKfgk0w==",
-      "graph_digest": "ce6e4a6e5b2620861b970b867cbdea7bc97c7fd976bbbb98010dc85a0818bf3d",
+      "version": "0.2.1-alpha.4",
+      "integrity": "sha512-nnJP3UyD0ldlAxH0BXhBUBYE3vI7w0DECncqzAl1EotHphE5l2ggwenoaxXiISJgDTHc5BV9JWI6YU5PSI9Ifg==",
+      "graph_digest": "32180aaff44ebd8e9a28a3caef753a8d1d12cd60a2c48263ed01c7dd7aef7f6c",
       "release": {
-        "tag": "dsh-v0.2.1-alpha.2",
-        "version": "0.2.1-alpha.2",
-        "commit": "d743267388641bc76f17c45ce8b4c231aed1d32c",
-        "url": "https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.1-alpha.2",
-        "publishedAt": "2026-10-09T11:09:26Z",
+        "tag": "dsh-v0.2.1-alpha.4",
+        "version": "0.2.1-alpha.4",
+        "commit": "86a402200d95fecef4529d969836f1fe13c6cb0d",
+        "url": "https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.1-alpha.4",
+        "publishedAt": "2026-10-15T13:40:02Z",
         "prerelease": true
       }
     },
     "plugin": {
       "package": "dsh-whale-report",
       "version": "0.4.0",
-      "tarball_sha256": "0f24fae8f06b39653cab595cc17b95e7b22528b8db1b320873023b727d823a38",
+      "tarball_sha256": "5045fcf4fc76733d8e2413bedc4b0b46b01cea578ed41abf3a70104f0557913e",
       "contract_sha256": "774b2fe21bc499ee1e731716417ce1485c932c1e35c0da550918c605998d2f72"
     },
     "runtime": {
@@ -44,14 +44,14 @@
       },
       "runner": {
         "configuredLabel": "ubuntu-24.04",
-        "actualLabel": "GitHub Actions 1000002470",
+        "actualLabel": "GitHub Actions 1000002668",
         "os": "Linux",
         "arch": "x64",
         "githubActions": true
       }
     },
-    "verified_at": "2026-10-12T03:27:00.690Z",
-    "report_url": "https://github.com/LCYLYM/dsh-whale-report/actions/runs/38199747287"
+    "verified_at": "2026-10-15T17:08:03.716Z",
+    "report_url": "https://github.com/LCYLYM/dsh-whale-report/actions/runs/38774466357"
   },
   "campaigns": {
     "0.1.1-rc.2": {
@@ -313,6 +313,46 @@
         "max_attempts": 2
       },
       "finished_at": "2026-10-11T18:12:54.559Z"
+    },
+    "0.2.1-alpha.4": {
+      "epoch": 1,
+      "history": [],
+      "lifetime_active_ms": 0,
+      "lifetime_attempts": 0,
+      "status": "PASS",
+      "automatic_repair_used": true,
+      "attempts_used": 1,
+      "base_commit": "e484182a80be76c25f7c5b20336ed182c2b952ca",
+      "repair_dsh_version": "0.2.1-alpha.2",
+      "provider": "deepseek-official",
+      "model": "auto",
+      "route_fingerprint": "e3b3ba05dc17aaf6e7e9b09484aae5733da503811fb724d81f9b48d59edccb25",
+      "input_fingerprint": "67cb22955a004c141254d42ba1bfbf16fb884374f12e825f82e790f1278ffa3d",
+      "usage": {
+        "inputTokens": 38804,
+        "outputTokens": 692,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0,
+        "reasoningTokens": 0,
+        "totalTokens": 39496,
+        "sessionFiles": 1
+      },
+      "estimated_cny": {
+        "amount": null,
+        "band": "low_price",
+        "revision": "deepseek-public-2026-08-21",
+        "known": false
+      },
+      "active_ms": 59970,
+      "converge_message_sent": false,
+      "converge_message_due": false,
+      "limits": {
+        "max_tokens": 100000000,
+        "max_cny": 3,
+        "max_wall_minutes": 180,
+        "max_attempts": 4
+      },
+      "finished_at": "2026-10-15T17:08:04.363Z"
     }
   }
 }
